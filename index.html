@@ -160,7 +160,10 @@
                     </div>
 
                     <div class="mt-12 flex items-center gap-4">
-                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-midnight-900 font-bold text-2xl font-display">LS</div>
+                        <div class="relative w-16 h-16 rounded-full overflow-hidden border-2 border-gold-500/50">
+                            <img src="/assets/images/luizinho.jpg" alt="Luizinho Silveira" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="hidden w-full h-full bg-gradient-to-br from-gold-400 to-gold-600 items-center justify-center text-midnight-900 font-bold text-2xl font-display">LS</div>
+                        </div>
                         <div>
                             <div class="font-bold text-white text-lg">luizinho silveira</div>
                             <div class="text-gold-400 text-sm uppercase tracking-wider">Fundador & Diretor</div>
@@ -339,8 +342,8 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row gap-8 items-center p-6 bg-midnight-800 rounded-2xl border border-gray-800 hover:border-gold-500/30 transition-all">
-                    <div class="font-display text-2xl font-bold text-gold-400 w-32 shrink-0 text-center leading-tight">INSTITUCIONAL</div>
+                <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start p-6 bg-midnight-800 rounded-2xl border border-gray-800 hover:border-gold-500/30 transition-all">
+                    <div class="font-display text-xl md:text-2xl font-bold text-gold-400 md:w-48 shrink-0 text-center md:text-left leading-tight mt-1">INSTITUCIONAL</div>
                     <div>
                         <h3 class="text-xl font-bold text-white mb-2">Secretarias de Cultura e Múltiplas Parcerias</h3>
                         <p class="text-gray-400">Trabalhos em conjunto com Secretarias de Cultura de DF, BA, RJ, além de outras inúmeras parcerias consagradas em quase quatro décadas.</p>
@@ -367,21 +370,32 @@
                     <p class="text-gray-300 text-lg mb-6 leading-relaxed">
                         Luiz Silveira compartilha em seu livro toda a sua trajetória de quase quatro décadas no mercado da música e entretenimento, com histórias de bastidores, dicas valiosas e depoimentos exclusivos.
                     </p>
-                    <div class="flex gap-4">
-                        <a href="https://clubedeautores.com.br" target="_blank" class="bg-gold-500 text-midnight-900 px-8 py-4 rounded-full font-bold hover:bg-gold-400 transition-all text-center">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://clubedeautores.com.br/livro/descortinando-o-show-business-4" target="_blank" rel="noopener noreferrer" class="bg-gold-500 text-midnight-900 px-8 py-4 rounded-full font-bold hover:bg-gold-400 transition-all text-center">
                             Clube de Autores
                         </a>
-                        <a href="https://amazon.com.br" target="_blank" class="border border-gold-500 text-gold-400 px-8 py-4 rounded-full font-bold hover:bg-gold-500/10 transition-all text-center">
+                        <a href="https://www.amazon.com.br/DESCORTINANDO-SHOW-BUSINESS-dinheiro-trabalhando-ebook/dp/B0FHDDQKG3" target="_blank" rel="noopener noreferrer" class="border border-gold-500 text-gold-400 px-8 py-4 rounded-full font-bold hover:bg-gold-500/10 transition-all text-center">
                             Kindle Amazon
                         </a>
                     </div>
                 </div>
                 <div class="order-1 md:order-2 flex justify-center">
-                    <div class="bg-gradient-to-br from-gold-400 to-gold-600 p-1 rounded-lg shadow-2xl shadow-gold-500/20 max-w-sm w-full">
-                        <div class="bg-midnight-900 p-8 rounded-lg text-center">
-                            <h3 class="font-display text-2xl font-bold text-gold-gradient mb-2">DESCORTINANDO O SHOW BUSINESS</h3>
+                    <div class="bg-gradient-to-br from-gold-400 to-gold-600 p-1 rounded-lg shadow-2xl shadow-gold-500/20 w-full max-w-sm">
+                        <div class="bg-midnight-900 p-6 md:p-8 rounded-lg text-center flex flex-col items-center w-full">
+                            
+                            <div class="relative w-full max-w-[240px] aspect-[9/16] rounded-xl overflow-hidden shadow-lg shadow-black/80 mb-6 border border-gray-800">
+                                <iframe 
+                                    class="absolute top-0 left-0 w-full h-full" 
+                                    src="https://www.youtube.com/embed/6XGR7YBkFnU?rel=0&modestbranding=1&loop=1&playlist=6XGR7YBkFnU" 
+                                    title="Descortinando o Show Business" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <h3 class="font-display text-xl md:text-2xl font-bold text-gold-gradient mb-2">DESCORTINANDO O SHOW BUSINESS</h3>
                             <p class="text-gray-400 italic">Por luizinho silveira</p>
-                            <div class="mt-6 text-6xl">📖</div>
                         </div>
                     </div>
                 </div>
