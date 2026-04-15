@@ -87,8 +87,8 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
-                <a href="#" class="flex items-center">
-                    <img src="/assets/images/logo.png" alt="Luarte Shows Logo" class="h-10 md:h-12 w-auto object-contain transition-transform hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <a href="#" class="flex items-center h-full py-2">
+                    <img src="/assets/images/logo.webp" alt="Luarte Shows Logo" class="h-12 md:h-14 w-auto object-contain transition-transform hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <span class="hidden font-display text-2xl font-bold text-gold-gradient tracking-wider">
                         LUARTE<span class="text-white text-sm align-top">®</span>
                     </span>
@@ -197,7 +197,6 @@
             </div>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4 reveal">
-                
                 <script>
                     const artists = [
                         { file: 'com-sergio-sampaio', name: 'Com Sergio Sampaio' },
@@ -263,7 +262,6 @@
                         { file: 'golden-boys', name: 'Golden Boys' }
                     ];
 
-                    // Gambiarra suprema de performance: renderizar via JS pra não inchar o HTML primário
                     const gridHtml = artists.map(item => `
                         <div class="group relative aspect-square bg-midnight-800 rounded-lg overflow-hidden border border-gray-800 hover:border-gold-500/80 transition-all duration-300">
                             <img src="/assets/images/${item.file}.webp" 
@@ -447,19 +445,12 @@
                     <p class="text-gray-400">Seja qual for o artista do seu interesse, faça uma consulta e buscaremos a melhor maneira de atendê-lo.</p>
                 </div>
                 
-                <div class="grid md:grid-cols-2 gap-6 mb-12">
-                    <a href="https://wa.me/5521987971000" target="_blank" class="flex items-center gap-4 p-6 rounded-2xl bg-midnight-800 hover:bg-green-500/10 border border-gray-700 hover:border-green-500/50 transition-all group">
-                        <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-2xl group-hover:scale-110 transition-transform">💬</div>
-                        <div>
-                            <div class="text-sm text-gray-400">WhatsApp</div>
-                            <div class="text-white font-bold">(21) 98797-1000</div>
-                        </div>
-                    </a>
-                    <a href="mailto:luizdiversaoearte@gmail.com" class="flex items-center gap-4 p-6 rounded-2xl bg-midnight-800 hover:bg-gold-500/10 border border-gray-700 hover:border-gold-500/50 transition-all group">
+                <div class="flex justify-center mb-12">
+                    <a href="mailto:luizdiversaoearte@gmail.com" class="flex items-center gap-4 p-6 w-full max-w-md rounded-2xl bg-midnight-800 hover:bg-gold-500/10 border border-gray-700 hover:border-gold-500/50 transition-all group shadow-lg">
                         <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 text-2xl group-hover:scale-110 transition-transform">✉</div>
                         <div>
                             <div class="text-sm text-gray-400">E-mail</div>
-                            <div class="text-white font-bold text-sm">luizdiversaoearte@gmail.com</div>
+                            <div class="text-white font-bold text-sm md:text-base">luizdiversaoearte@gmail.com</div>
                         </div>
                     </a>
                 </div>
