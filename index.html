@@ -80,6 +80,7 @@
             border: none;
         }
     </style>
+<base target="_blank">
 </head>
 <body class="bg-midnight-900 text-white font-body selection:bg-gold-500 selection:text-midnight-900">
 
@@ -121,13 +122,10 @@
             
             <p class="font-display text-xl sm:text-2xl text-gray-300 font-light italic max-w-4xl mx-auto leading-relaxed mb-12 uppercase tracking-wide">
                 "O MUNDO SERIA OPACO NÃO FOSSEM OS PALCOS" <br>
-                <span class="text-lg text-white not-italic lowercase tracking-normal mt-4 block">luizinho silveira</span>
+                <span class="text-lg text-white not-italic tracking-normal mt-4 block text-right font-body font-light normal-case">Luizinho Silveira</span>
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contato" class="bg-gold-500 text-midnight-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-gold-400 transition-transform hover:scale-105 shadow-[0_0_30px_rgba(212,175,55,0.3)]">
-                    Solicitar Orçamento
-                </a>
                 <a href="#artistas" class="border border-gold-500/50 text-gold-400 px-10 py-5 rounded-full font-bold text-lg hover:border-gold-400 hover:bg-gold-500/10 transition-all">
                     Ver Acervo
                 </a>
@@ -135,7 +133,7 @@
 
             <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto pt-12 border-t border-gray-800">
                 <div class="text-center">
-                    <div class="font-display text-4xl text-gold-gradient font-bold">40+</div>
+                    <div class="font-display text-4xl text-gold-gradient font-bold">40</div>
                     <div class="text-gray-500 text-sm uppercase tracking-wider mt-1">Anos de Atuação</div>
                 </div>
                 <div class="text-center">
@@ -143,7 +141,7 @@
                     <div class="text-gray-500 text-sm uppercase tracking-wider mt-1">Fundação</div>
                 </div>
                 <div class="text-center">
-                    <div class="font-display text-4xl text-gold-gradient font-bold">2.000+</div>
+                    <div class="font-display text-4xl text-gold-gradient font-bold">MAIS de 2.000</div>
                     <div class="text-gray-500 text-sm uppercase tracking-wider mt-1">Shows Produzidos</div>
                 </div>
             </div>
@@ -170,8 +168,8 @@
                             <div class="hidden w-full h-full bg-gradient-to-br from-gold-400 to-gold-600 items-center justify-center text-midnight-900 font-bold text-2xl font-display">LS</div>
                         </div>
                         <div>
-                            <div class="font-bold text-white text-lg">luizinho silveira</div>
-                            <div class="text-gold-400 text-sm uppercase tracking-wider">Fundador & Diretor</div>
+                            <div class="font-bold text-white text-xl font-body">Luiz Silveira</div>
+                            <div class="text-gold-400 text-sm uppercase tracking-wider">Fundador e diretor.</div>
                         </div>
                     </div>
                 </div>
@@ -193,93 +191,103 @@
                 <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">
                     <span class="text-gold-gradient">Acervo</span> Fotográfico
                 </h2>
-                <p class="text-gray-400 text-lg">Trabalhos e encontros memoráveis ao longo de 4 décadas.</p>
+                <p class="text-gray-400 text-lg">Alguns trabalhos e encontros memoráveis</p>
             </div>
 
-            <div class="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-3 md:gap-4 reveal">
-                <script>
-                    const artists = [
-                        { file: 'com-sergio-sampaio', name: 'Com Sérgio Sampaio' },
-                        { file: 'ayrton-ramos-tania-mana-barreto', name: 'Ayrton Ramos & Tania Mana Barreto' },
-                        { file: 'recorte-correio-braziense', name: 'Recorte Correio Braziliense' },
-                        { file: 'milton-guedes-tania-menna-barreto', name: 'Milton Guedes & Tania Menna Barreto' },
-                        { file: 'jerry-adriani-gutinho', name: 'Jerry Adriani & Gutinho' },
-                        { file: 'jerry-fagner', name: 'Jerry & Fagner' },
-                        { file: 'jerry-adriani', name: 'Jerry Adriani' },
-                        { file: 'paralamas', name: 'Paralamas' },
-                        { file: 'jorge-vercillo', name: 'Jorge Vercillo' },
-                        { file: 'leo-jaime', name: 'Leo Jaime' },
-                        { file: 'lenine', name: 'Lenine' },
-                        { file: 'zeca-baleiro', name: 'Zeca Baleiro' },
-                        { file: 'chico-cesar', name: 'Chico César' },
-                        { file: 'elba-ramalho', name: 'Elba Ramalho' },
-                        { file: 'remy-portilho-zelia-duncan', name: 'Remy Portilho & Zélia Duncan' },
-                        { file: 'remy-alceu-valenca', name: 'Remy & Alceu Valença' },
-                        { file: 'geraldo-azevedo', name: 'Geraldo Azevedo' },
-                        { file: 'belchior-sergio-zurawski', name: 'Belchior & Sérgio Zurawski' },
-                        { file: 'ednardo-amelinha-belchior', name: 'Ednardo, Amelinha & Belchior' },
-                        { file: 'ednardo', name: 'Ednardo' },
-                        { file: 'belchior', name: 'Belchior' },
-                        { file: 'moraes-moreira', name: 'Moraes Moreira' },
-                        { file: 'luiz-melodia', name: 'Luiz Melodia' },
-                        { file: 'rita-beneditto', name: 'Rita Beneditto' },
-                        { file: 'pepeu-gomes', name: 'Pepeu Gomes' },
-                        { file: 'jorge-mautner', name: 'Jorge Mautner' },
-                        { file: 'mautner-tom-ze-jarbas-mariz-celso-sim-nelson-jacobina', name: 'Mautner, Tom Zé, Jarbas, Celso Sim, Nelson Jacobina' },
-                        { file: 'jards-macale', name: 'Jards Macalé' },
-                        { file: 'angela-ro-ro', name: 'Angela Ro Ro' },
-                        { file: 'ro-ro', name: 'Ro Ro' },
-                        { file: 'arnaldo-antunes', name: 'Arnaldo Antunes' },
-                        { file: 'lan-lan', name: 'Lan Lan' },
-                        { file: 'eduardo-dussek', name: 'Eduardo Dussek' },
-                        { file: 'celso-blues-boy', name: 'Celso Blues Boy' },
-                        { file: 'guilherme-arantes', name: 'Guilherme Arantes' },
-                        { file: 'almir-sater', name: 'Almir Sater' },
-                        { file: 'claudio-nucci', name: 'Claudio Nucci' },
-                        { file: 'claudio-zoli-nico-rezende', name: 'Claudio Zoli & Nico Rezende' },
-                        { file: 'jorge-benjor', name: 'Jorge Ben Jor' },
-                        { file: 'ze-renato', name: 'Zé Renato' },
-                        { file: 'marcos-valle', name: 'Marcos Valle' },
-                        { file: 'francis-hime', name: 'Francis Hime' },
-                        { file: 'oswaldo-montenegro', name: 'Oswaldo Montenegro' },
-                        { file: 'meu-cumpadicro', name: 'Meu Cumpadricó' },
-                        { file: 'luiz-silveira-homenagem-milton-nascimento-carnaval-2025', name: 'Homenagem Milton Nascimento (2025)' },
-                        { file: 'bebeto', name: 'Bebeto' },
-                        { file: 'carlinhos-de-jesus', name: 'Carlinhos de Jesus' },
-                        { file: 'sabrina-satto', name: 'Sabrina Sato' },
-                        { file: 'deorah-colker-jorge-miguel-toni-platao-donny-araujo', name: 'Deborah Colker, Jorge Miguel, Toni Platão, Donny Araujo' },
-                        { file: 'lo-borges', name: 'Lô Borges' },
-                        { file: 'zeze-motta', name: 'Zezé Motta' },
-                        { file: 'claudio-nucci-eduard-may-ney-conceicao', name: 'Claudio Nucci, Eduard May, Ney Conceição' },
-                        { file: 'serguei', name: 'Serguei' },
-                        { file: 'doreen-ketchens', name: 'Doreen Ketchens' },
-                        { file: 'disco-doreen-ketchens', name: 'Disco Doreen Ketchens' },
-                        { file: 'grandpa-elliott', name: 'Grandpa Elliott' },
-                        { file: 'grandpa-elliott-2', name: 'Grandpa Elliott 2' },
-                        { file: 'bruce-willis-madame-tussauds', name: 'Bruce Willis (Madame Tussauds)' },
-                        { file: 'recorte-show-joao-bosco-folha-da-manha', name: 'Recorte Show João Bosco' },
-                        { file: 'beto-guedes', name: 'Beto Guedes' },
-                        { file: 'golden-boys', name: 'Golden Boys' }
-                    ];
-
-                    const gridHtml = artists.map(item => `
-                        <div class="group relative bg-midnight-800 rounded-lg overflow-hidden border border-gray-800 hover:border-gold-500/80 transition-all duration-300 w-full inline-block break-inside-avoid mb-3 md:mb-4">
-                            <img src="/assets/images/${item.file}.webp" 
-                                 alt="${item.name}" 
-                                 loading="lazy" 
-                                 class="w-full h-auto block opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                                 onerror="this.parentElement.style.display='none'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-midnight-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300 pointer-events-none">
-                                <p class="font-display font-bold text-white text-xs md:text-sm uppercase leading-tight drop-shadow-md">${item.name}</p>
-                            </div>
-                        </div>
-                    `).join('');
-                    document.write(gridHtml);
-                </script>
+            <div id="acervo-grid" class="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-3 md:gap-4 reveal">
+                <!-- As imagens serão inseridas aqui via JavaScript -->
             </div>
         </div>
     </section>
+
+    <script>
+        (function() {
+            const artists = [
+                { file: 'almir_sater', name: 'Almir Sater' },
+                { file: 'angela-ro-ro', name: 'Angela Ro Ro' },
+                { file: 'arnaldo_antunes', name: 'Arnaldo Antunes' },
+                { file: 'ayrton-ramos-e-tania-tena-barreto', name: 'Ayrton Ramos e Tania Tena Barreto' },
+                { file: 'bebetO', name: 'Bebeto' },
+                { file: 'belchior', name: 'Belchior' },
+                { file: 'beto-guedes', name: 'Beto Guedes' },
+                { file: 'bruce_willis_no_tussauds', name: 'Bruce Willis no Tussauds' },
+                { file: 'carlinhos_de_jesus', name: 'Carlinhos de Jesus' },
+                { file: 'chico_cesar', name: 'Chico César' },
+                { file: 'claudio_nucci', name: 'Claudio Nucci' },
+                { file: 'claudio-zoli-nico-rezende', name: 'Claudio Zoli e Nico Rezende' },
+                { file: 'com-sergio-sampaio', name: 'Sérgio Sampaio' },
+                { file: 'dreen_em_new_orleans', name: 'Dreen - New Orleans' },
+                { file: 'dudu_nobre', name: 'Dudu Nobre' },
+                { file: 'ednardo', name: 'Ednardo' },
+                { file: 'ednardo-amelinha-belchior', name: 'Ednardo, Amelinha e Belchior' },
+                { file: 'eduardo_dusek', name: 'Eduardo Dusek' },
+                { file: 'elba_ramalho', name: 'Elba Ramalho' },
+                { file: 'fagner', name: 'Fagner' },
+                { file: 'francis_hime', name: 'Francis Hime' },
+                { file: 'frank_aguiar', name: 'Frank Aguiar' },
+                { file: 'geraldo-azevedo', name: 'Geraldo Azevedo' },
+                { file: 'grandpa-elliott', name: 'Grandpa Elliott - New Orleans' },
+                { file: 'guilherme-arantes', name: 'Guilherme Arantes' },
+                { file: 'jards-macale', name: 'Jards Macalé' },
+                { file: 'jerry-adriani', name: 'Jerry Adriani' },
+                { file: 'jerry-adriani-gutinho', name: 'Jerry Adriani e Gutinho' },
+                { file: 'jerry-fagner', name: 'Jerry e Fagner' },
+                { file: 'jorge_ben', name: 'Jorge Ben' },
+                { file: 'jorge_mautner', name: 'Jorge Mautner' },
+                { file: 'jorge-vercillo', name: 'Jorge Vercillo' },
+                { file: 'lan-lan', name: 'Lan Lan' },
+                { file: 'lenine', name: 'Lenine' },
+                { file: 'leo-jaime', name: 'Leo Jaime' },
+                { file: 'lo_borges', name: 'Lô Borges' },
+                { file: 'logo', name: 'Logo' },
+                { file: 'luiz-melodia', name: 'Luiz Melodia' },
+                { file: 'luiz-melodia-2', name: 'Luiz Melodia' },
+                { file: 'luiz_melodia_outra', name: 'Luiz Melodia' },
+                { file: 'luizinho', name: 'Luizinho' },
+                { file: 'marcos_valle', name: 'Marcos Valle' },
+                { file: 'mautner_tom_ze_jarbas_jacobina', name: 'Jorge Mautner, Tom Zé e Jarbas Jacobina' },
+                { file: 'meu-cumpadicro', name: 'Meu Cumpadicro' },
+                { file: 'milton-guedes-tania-menna-barreto', name: 'Milton Guedes e Tania Menna Barreto' },
+                { file: 'moraes-moreira', name: 'Moraes Moreira' },
+                { file: 'muitos', name: 'Muitos' },
+                { file: 'nico', name: 'Nico' },
+                { file: 'oswaldo-montenegro', name: 'Oswaldo Montenegro' },
+                { file: 'paralamas', name: 'Paralamas' },
+                { file: 'paulinho_ecosom', name: 'Paulinho Ecosom' },
+                { file: 'portela', name: 'Portela' },
+                { file: 'recorte-correio-braziense', name: 'Recorte Correio Braziliense' },
+                { file: 'recorte-show-joao-bosco-folha-da-manha', name: 'Recorte Show João Bosco - Folha da Manhã' },
+                { file: 'rita-benedictto', name: 'Rita Benedictto' },
+                { file: 'sabrina-satto', name: 'Sabrina Satto' },
+                { file: 'serguei', name: 'Serguei' },
+                { file: 'tania_mena_barreto_&_ayrton_ramos', name: 'Tania Menna Barreto e Ayrton Ramos' },
+                { file: 'tunai', name: 'Tunai' },
+                { file: 'zeca-baleiro', name: 'Zeca Baleiro' },
+                { file: 'ze-renato', name: 'Zé Renato' },
+                { file: 'zeze-motta', name: 'Zezé Motta' }
+            ];
+
+            const grid = document.getElementById('acervo-grid');
+            if (!grid) return;
+
+            const fragment = document.createDocumentFragment();
+
+            artists.forEach(function(item) {
+                const div = document.createElement('div');
+                div.className = 'group relative bg-midnight-800 rounded-lg overflow-hidden border border-gray-800 hover:border-gold-500/80 transition-all duration-300 w-full inline-block break-inside-avoid mb-3 md:mb-4';
+
+                div.innerHTML = '<img src="/assets/images/' + item.file + '.webp" alt="' + item.name + '" loading="lazy" class="w-full h-auto block opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500" onerror="this.parentElement.style.display='none'">' +
+                    '<div class="absolute inset-0 bg-gradient-to-t from-midnight-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>' +
+                    '<div class="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300 pointer-events-none">' +
+                    '<p class="font-display font-bold text-white text-xs md:text-sm uppercase leading-tight drop-shadow-md">' + item.name + '</p>' +
+                    '</div>';
+
+                fragment.appendChild(div);
+            });
+
+            grid.appendChild(fragment);
+        })();
+    </script>
 
     <section id="videos" class="py-32 relative bg-midnight-800/50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -324,6 +332,43 @@
         </div>
     </section>
 
+    
+    <section id="homenagem" class="py-32 bg-midnight-900 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-gold-gradient">Homenagem</span> nos Estados Unidos
+                </h2>
+            </div>
+            <div class="reveal">
+                <div class="relative bg-midnight-800 rounded-2xl overflow-hidden border border-gray-800 hover:border-gold-500/30 transition-all shadow-2xl">
+                    <img src="/assets/images/Homenagem.webp" 
+                         alt="Homenagem nos Estados Unidos" 
+                         class="w-full h-auto block"
+                         onerror="this.parentElement.innerHTML='<div class='w-full h-96 flex items-center justify-center text-gold-400 font-display text-2xl'>Homenagem nos Estados Unidos</div>'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="crachas" class="py-32 bg-midnight-800 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-gold-gradient">Alguns</span> Crachás
+                </h2>
+            </div>
+            <div class="reveal">
+                <div class="relative bg-midnight-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gold-500/30 transition-all shadow-2xl">
+                    <img src="/assets/images/crachas.webp" 
+                         alt="Alguns Crachás" 
+                         class="w-full h-auto block"
+                         onerror="this.parentElement.innerHTML='<div class='w-full h-96 flex items-center justify-center text-gold-400 font-display text-2xl'>Alguns Crachás</div>'">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="historia" class="py-32 relative border-t border-gray-800">
         <div class="max-w-5xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -353,7 +398,7 @@
                     <div class="font-display text-4xl font-bold text-gold-400 w-32 shrink-0 text-center">1998</div>
                     <div>
                         <h3 class="text-xl font-bold text-white mb-2">Ancar Ivanhoe</h3>
-                        <p class="text-gray-400">8 anos de parceria com shoppings centers, expandindo a atuação para grandes redes.</p>
+                        <p class="text-gray-400">8 anos de parceria com shows e eventos em importantes shoppings pelo Brasil</p>
                     </div>
                 </div>
 
@@ -361,7 +406,7 @@
                     <div class="font-display text-4xl font-bold text-gold-400 w-32 shrink-0 text-center">2004</div>
                     <div>
                         <h3 class="text-xl font-bold text-white mb-2">Paulo Octávio Empreendimentos</h3>
-                        <p class="text-gray-400">Firmada grande parceria em Brasília/DF.</p>
+                        <p class="text-gray-400">Parceiros em Brasília D.F</p>
                     </div>
                 </div>
 
@@ -369,7 +414,7 @@
                     <div class="font-display text-4xl font-bold text-gold-400 w-32 shrink-0 text-center">2010</div>
                     <div>
                         <h3 class="text-xl font-bold text-white mb-2">Firjan / SESI</h3>
-                        <p class="text-gray-400">Início da sólida parceria com a Federação das Indústrias do Estado do Rio de Janeiro e o SESI.</p>
+                        <p class="text-gray-400">Início da sólida parceria com a Federação das Indústrias do RJ/ SESI.</p>
                     </div>
                 </div>
 
@@ -383,8 +428,8 @@
                 <div class="flex flex-col md:flex-row gap-8 items-center p-6 bg-midnight-800 rounded-2xl border border-gray-800 hover:border-gold-500/30 transition-all">
                     <div class="font-display text-4xl font-bold text-gold-400 w-32 shrink-0 text-center">2024</div>
                     <div>
-                        <h3 class="text-xl font-bold text-white mb-2">Lançamento do Livro</h3>
-                        <p class="text-gray-400">"Descortinando o Show Business" - Luizinho Silveira lança obra literária imortalizando sua expertise no mercado.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Lançamento do livro: "DESCORTINANDO O SHOW BUSINESS"</h3>
+                        <p class="text-gray-400">Obra literária onde Luizinho Silveira imortaliza sua história no mercado de Shows & Eventos.</p>
                     </div>
                 </div>
             </div>
@@ -426,7 +471,7 @@
                             </div>
                             
                             <h3 class="font-display text-xl md:text-2xl font-bold text-gold-gradient mb-2">DESCORTINANDO O SHOW BUSINESS</h3>
-                            <p class="text-gray-400 italic">Por luizinho silveira</p>
+                            <p class="text-gray-400 italic font-body">Por Luizinho Silveira</p>
                         </div>
                     </div>
                 </div>
