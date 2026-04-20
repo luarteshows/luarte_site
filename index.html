@@ -202,6 +202,10 @@
     <script>
         (function() {
             const artists = [
+                // Sérgio Sampaio como elemento absoluto número 1
+                { file: 'com-sergio-sampaio.webp', name: 'Com Sérgio Sampaio' },
+                
+                // Restante do acervo fotográfico
                 { file: 'almir_sater.webp', name: 'Almir Sater' },
                 { file: 'angela-ro-ro.webp', name: 'Angela Ro Ro' },
                 { file: 'arnaldo_antunes.webp', name: 'Arnaldo Antunes' },
@@ -213,8 +217,6 @@
                 { file: 'chico_cezar.webp', name: 'Chico Cezar' },
                 { file: 'claudio_nucci.webp', name: 'Claudio Nucci' },
                 { file: 'claudio-zoli-nico-rezende.webp', name: 'Claudio Zoli e Nico Rezende' },
-                { file: 'com-sergio-sampaio.webp', name: 'Com Sergio Sampaio' },
-                { file: 'crachas.webp', name: 'Crachás' },
                 { file: 'dudu_nobre.webp', name: 'Dudu Nobre' },
                 { file: 'ednardo.webp', name: 'Ednardo' },
                 { file: 'ednardo-amelinha-belchior.webp', name: 'Ednardo, Amelinha e Belchior' },
@@ -225,7 +227,6 @@
                 { file: 'geraldo-azevedo.webp', name: 'Geraldo Azevedo' },
                 { file: 'grandpa-elliott.webp', name: 'Grandpa Elliott - New Orleans' },
                 { file: 'guilherme-arantes.webp', name: 'Guilherme Arantes' },
-                { file: 'Homenagem.webp', name: 'Homenagem' },
                 { file: 'jards_macale.webp', name: 'Jards Macalé' },
                 { file: 'jerry-adriani.webp', name: 'Jerry Adriani' },
                 { file: 'jerry-adriani-gutinho.webp', name: 'Jerry Adriani e Gutinho' },
@@ -235,8 +236,6 @@
                 { file: 'lan-lan.webp', name: 'Lan Lan' },
                 { file: 'lenine.webp', name: 'Lenine' },
                 { file: 'leo-jaime.webp', name: 'Leo Jaime' },
-                { file: 'logo.png', name: 'Logo' },
-                { file: 'luizinho.jpg', name: 'Luizinho' },
                 { file: 'luiz-melodia.webp', name: 'Luiz Melodia' },
                 { file: 'luiz-melodia-2.webp', name: 'Luiz Melodia 2' },
                 { file: 'meu-cumpadicro.webp', name: 'Meu Cumpadicro' },
@@ -267,7 +266,6 @@
                 const div = document.createElement('div');
                 div.className = 'group relative bg-midnight-800 rounded-lg overflow-hidden border border-gray-800 hover:border-gold-500/80 transition-all duration-300 w-full inline-block break-inside-avoid mb-3 md:mb-4';
 
-                // Agora o item.file inclui a extensão exata lida do CSV, prevenindo qualquer falha de ficheiro
                 div.innerHTML = `
                     <img src="/assets/images/${item.file}" 
                          alt="${item.name}" 
