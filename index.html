@@ -62,7 +62,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* gambiarra elegante pro iframe do youtube */
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -80,7 +79,6 @@
             border: none;
         }
     </style>
-<base target="_blank">
 </head>
 <body class="bg-midnight-900 text-white font-body selection:bg-gold-500 selection:text-midnight-900">
 
@@ -195,17 +193,14 @@
             </div>
 
             <div id="acervo-grid" class="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-3 md:gap-4 reveal">
-                </div>
+            </div>
         </div>
     </section>
 
     <script>
         (function() {
             const artists = [
-                // Sérgio Sampaio como elemento absoluto número 1
                 { file: 'com-sergio-sampaio.webp', name: 'Com Sérgio Sampaio' },
-                
-                // Restante do acervo fotográfico
                 { file: 'almir_sater.webp', name: 'Almir Sater' },
                 { file: 'angela_roro_11.webp', name: 'Angela Ro Ro' },
                 { file: 'angela-ro-ro.webp', name: 'Angela Ro Ro' },
@@ -342,7 +337,6 @@
         </div>
     </section>
 
-    
     <section id="homenagem" class="py-32 bg-midnight-900 border-t border-gray-800">
         <div class="max-w-5xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -467,7 +461,6 @@
                 <div class="order-1 md:order-2 flex justify-center">
                     <div class="bg-gradient-to-br from-gold-400 to-gold-600 p-1 rounded-lg shadow-2xl shadow-gold-500/20 w-full max-w-sm">
                         <div class="bg-midnight-900 p-6 md:p-8 rounded-lg text-center flex flex-col items-center w-full">
-                            
                             <div class="relative w-full max-w-[240px] aspect-[9/16] rounded-xl overflow-hidden shadow-lg shadow-black/80 mb-6 border border-gray-800">
                                 <iframe 
                                     class="absolute top-0 left-0 w-full h-full" 
@@ -479,7 +472,6 @@
                                     loading="lazy">
                                 </iframe>
                             </div>
-                            
                             <h3 class="font-display text-xl md:text-2xl font-bold text-gold-gradient mb-2">DESCORTINANDO O SHOW BUSINESS</h3>
                             <p class="text-gray-400 italic font-body">Por Luizinho Silveira</p>
                         </div>
@@ -511,7 +503,6 @@
                 
                 <form name="contato-luarte" method="POST" data-netlify="true" class="space-y-6">
                     <input type="hidden" name="form-name" value="contato-luarte">
-                    
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-bold text-gray-400 mb-2 uppercase tracking-wider">Nome</label>
@@ -563,7 +554,6 @@
     </footer>
 
     <script>
-        // Animação nativa vanilla JS
         document.addEventListener("DOMContentLoaded", () => {
             const observerOptions = { root: null, rootMargin: "0px", threshold: 0.1 };
             const observer = new IntersectionObserver((entries) => {
