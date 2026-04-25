@@ -1,0 +1,45 @@
+# ===================================================================
+# NEXUS ARCHITECT 2026 - OTIMIZAÇÃO DE DEPLOY NETLIFY
+# ===================================================================
+
+[build]
+  # Como é um projeto HTML puro sem framework (React/Vue), 
+  # o diretório de publicação é a própria raiz do projeto.
+  publish = "."
+
+# ===================================================================
+# HEADERS DE SEGURANÇA GLOBAIS
+# ===================================================================
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# ===================================================================
+# CACHE AGRESSIVO PARA ASSETS (IMAGENS DO ACERVO E LOGOS)
+# ===================================================================
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    # Cache de 1 ano para imagens. Garante carregamento instantâneo 
+    # nas próximas visitas e economiza banda da sua conta gratuita.
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ===================================================================
+# ROTEAMENTO E HTTPS
+# ===================================================================
+[[redirects]]
+  from = "http://*"
+  to = "https://*"
+  status = 301
+  force = true
+
+# Fallback para 404 (Garante que se alguém digitar uma URL errada, 
+# volte para a página inicial, mantendo o usuário no funil).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
